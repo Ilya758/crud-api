@@ -5,7 +5,8 @@
   "description": "simple-crud-api",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "nodemon --esm src/index.ts"
+    "start:dev": "nodemon --esm --experimental-specifier-resolution=node src/index.ts",
+    "start:prod": "webpack && node dist/main.cjs"
   },
   "repository": {
     "type": "git",
@@ -40,3 +41,4 @@
     "uuid": "^8.3.2"
   }
 }
+

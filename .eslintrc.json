@@ -10,6 +10,7 @@
     },
     "requireConfigFile": false
   },
+  "ignorePatterns": ["./**/*.cjs"],
   "env": {
     "es6": true,
     "node": true
@@ -38,10 +39,10 @@
         "no-console": "off",
         "max-len": "off",
         "prefer-const": "off",
+        "import/prefer-default-export": "off",
         "no-new": "off",
         "space-before-function-paren": "off"
       }
     }
   ]
 }
-
