@@ -6,8 +6,7 @@
 
 - clone repo
 - type `npm install`
-- create `.env` file in the ROOT of the project (near the src folder, NOT INSIDE!)
-- type `PORT=5000` //or another value
+- in `.env` you can type `PORT=5000` port whatever you want
 
 ---
 
@@ -34,6 +33,7 @@
 ##### GET requests
 
 An app can read requests from the user.
+
 - endpoint: /api/users - to get all users
 - body: none
 - result: collection of users 200 OK
@@ -51,6 +51,7 @@ An app can read requests from the user.
 ###### POST requests
 
 Create new user
+
 - endpoint: /api/users
 - body: {id: string, age: number, hobbies: string[]};
 - result: newly created user with code 201 or 400 Bad Request
@@ -60,6 +61,7 @@ Create new user
 ###### PUT requests
 
 Update user
+
 - endpoint: /api/users/userId
 - body: {id: string, age: number, hobbies: string[]};
 - result: updated user with code 200 or 400 Bad Request, or 404 NotFound with bad userId
@@ -69,6 +71,7 @@ Update user
 ###### DELETE requests
 
 Delete particular user by userId
+
 - endpoint: /api/users/userId
 - body: {id: string, age: number, hobbies: string[]};
 - result: code 200 or 400 Bad Request, or 404 NotFound with bad userId
