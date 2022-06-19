@@ -3,8 +3,7 @@
     "target": "es5",
     "outDir": "lib",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "declaration": true,
-    "declarationDir": "lib",
+    "declaration": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -15,9 +14,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
-    "noEmit": true,
     "baseUrl": "."
   },
   "include": ["./src"],
-  "exclude": ["node_modules", "lib"]
+  "exclude": ["node_modules", "lib", "./**/*.cjs"]
 }
